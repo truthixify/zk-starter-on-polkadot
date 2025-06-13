@@ -53,15 +53,15 @@ yarn install
 
 ```
 ├── contracts/           # Smart contracts
-│   ├── Anon.sol        # Anonymous transaction contract
-│   └── Verifier.sol    # ZK proof verification contract
-├── circuits/           # Zero-knowledge circuits
-│   ├── Anon.circom     # Circuit for anonymous hash validation
-│   ├── build/          # Compiled circuit artifacts
-│   └── *.json          # Circuit inputs and outputs
-├── scripts/            # Deployment and interaction scripts
-├── test/              # Test files
-└── ignition/          # Deployment modules
+│   ├── Anon.sol         # Anonymous transaction contract
+│   └── Verifier.sol     # ZK proof verification contract
+├── circuits/            # Zero-knowledge circuits
+│   ├── Anon.circom      # Circuit for anonymous hash validation
+│   ├── build/           # Compiled circuit artifacts
+│   └── *.json           # Circuit inputs and outputs
+├── scripts/             # Deployment and interaction scripts
+├── test/                # Test files
+└── ignition/            # Deployment modules
 ```
 
 ## Project Components
