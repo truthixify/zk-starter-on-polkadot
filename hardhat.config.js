@@ -19,14 +19,12 @@ module.exports = {
         hardhat: {
             polkavm: true,
             nodeConfig: {
-                nodeBinaryPath:
-                    '/Users/truthixify/dev/polkadot/polkadot-sdk/substrate/bin/node/cli',
+                nodeBinaryPath: 'INSERT_PATH_TO_SUBSTRATE_NODE',
                 rpcPort: 8000,
                 dev: true
             },
             adapterConfig: {
-                adapterBinaryPath:
-                    '/Users/truthixify/dev/polkadot/polkadot-sdk/substrate/frame/revive/rpc',
+                adapterBinaryPath: 'INSERT_PATH_TO_ETH_RPC_ADAPTER',
                 dev: true
             }
         },
