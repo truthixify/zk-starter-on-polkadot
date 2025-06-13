@@ -1,0 +1,31 @@
+{
+    "name": "zk-starter-on-polkadot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "format": "npx prettier --write .",
+        "test": "npx hardhat test --network localNode",
+        "compile": "npx hardhat compile",
+        "deploy:passetHub": "npx hardhat ignition deploy ./ignition/modules/Anon.js --network passetHub",
+        "deploy:localNode": "npx hardhat ignition deploy ./ignition/modules/Anon.js --network localNode",
+        "interact:commit": "npx hardhat run ./scripts/interact/commit.js --network passetHub",
+        "interact:prove": "npx hardhat run ./scripts/interact/prove.js --network passetHub"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "circomlib": "^2.0.5",
+        "circomlibjs": "^0.1.7",
+        "snarkjs": "^0.7.5"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "@parity/hardhat-polkadot": "^0.1.6",
+        "dotenv": "^16.5.0",
+        "hardhat": "^2.24.2",
+        "solc": "0.8.28"
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
